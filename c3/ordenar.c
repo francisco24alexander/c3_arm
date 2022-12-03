@@ -24,22 +24,33 @@ int main(void)
     burbuja(num_ordenar,longitud_arreglo);
     printf("Arreglo ordenado");
     printf("\n");
+    printf("Datos ordenados en el arreglo : ");
+    for(int i = 0; i < longitud_arreglo; i++)
+    {
+        printf("%d ",num_ordenar[i]);
+    }
+    printf("\n");
+    printf("Fin del programa");
+    printf("\n");
 }
 
 void burbuja(int arreglo[],int longitud)
 {
+    printf("\n");
+    printf("Inicio del procedimiento de ordenamiento");
     for(int j = 0; j < longitud; j++)
     {
         for(int k = 0;k < longitud-j-1; k++)
         {
             if(arreglo[k] > arreglo[k+1])
             {
-                printf("Aqui se implementara intercambiar");
-                printf("\n");
-                //intercambiar(&arreglo[k],&arreglo[k+1]);
+                intercambiar(&arreglo[k],&arreglo[k+1]);
             }
         }
     }
+    printf("\n");
+    printf("Fin del procedimiento de ordenamiento");
+    printf("\n")
 }
 
 void intercambiar(int* a, int* b)
