@@ -30,8 +30,11 @@ void burbuja(int arreglo[],int longitud)
         {
             if(arreglo[k] > arreglo[k+1])
             {
+                printf("Aqui se implementara intercambiar");
+                printf("\n");
                 //intercambiar(&arreglo[k],&arreglo[k+1]);
             }
         }
     }
+    printf("Funcion terminada");
 }
