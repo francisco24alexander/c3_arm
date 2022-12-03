@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void burbuja(int arreglo[],int longitud);
-//void intercambiar(int* a, int* b);
+void intercambiar(int* a, int* b);
 
 int main(void)
 {
@@ -34,4 +34,11 @@ void burbuja(int arreglo[],int longitud)
             }
         }
     }
+}
+
+void intercambiar(int* a, int* b)
+{
+    int temporal = *a;
+    *a = *b;
+    *b = temporal;
 }
