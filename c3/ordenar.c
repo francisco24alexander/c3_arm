@@ -5,6 +5,8 @@ void intercambiar(int* a, int* b);
 
 int main(void)
 {
+    printf("Origen de este archivo es c3_arm");
+    printf("\n");
     printf("Programa para ordenar datos en un arreglo");
     printf("\n");
     int num_ordenar[] = {30,25,12,34,-4,-53,56,200,43,28};
