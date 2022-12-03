@@ -42,7 +42,7 @@ void burbuja(int arreglo[],int longitud)
     {
         for(int k = 0;k < longitud-j-1; k++)
         {
-            if(arreglo[k] > arreglo[k+1])
+            if(arreglo[k] < arreglo[k+1])
             {
                 intercambiar(&arreglo[k],&arreglo[k+1]);
             }
@@ -50,7 +50,7 @@ void burbuja(int arreglo[],int longitud)
     }
     printf("\n");
     printf("Fin del procedimiento de ordenamiento");
-    printf("\n")
+    printf("\n");
 }
 
 void intercambiar(int* a, int* b)
