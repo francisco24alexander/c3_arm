@@ -5,6 +5,8 @@ void intercambiar(int* a, int* b);
 
 int main(void)
 {
+    printf("Programa para ordenar datos en un arreglo");
+    printf("\n");
     int num_ordenar[] = {30,25,12,34,-4,-53,56,200,43,28};
 
     //Obtener datos del arreglo
@@ -20,6 +22,8 @@ int main(void)
     printf("\n");
 
     burbuja(num_ordenar,longitud_arreglo);
+    printf("Arreglo ordenado");
+    printf("\n");
 }
 
 void burbuja(int arreglo[],int longitud)
@@ -30,6 +34,8 @@ void burbuja(int arreglo[],int longitud)
         {
             if(arreglo[k] > arreglo[k+1])
             {
+                printf("Aqui se implementara intercambiar");
+                printf("\n");
                 //intercambiar(&arreglo[k],&arreglo[k+1]);
             }
         }
