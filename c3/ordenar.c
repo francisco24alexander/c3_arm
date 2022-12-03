@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+void burbuja(int arreglo[],int longitud);
+//void intercambiar(int* a, int* b);
+
 int main(void)
 {
     int num_ordenar[] = {30,25,12,34,-4,-53,56,200,43,28};
@@ -15,4 +18,20 @@ int main(void)
         printf("%d ",num_ordenar[i]);
     }
     printf("\n");
+
+    burbuja(num_ordenar,longitud_arreglo);
+}
+
+void burbuja(int arreglo[],int longitud)
+{
+    for(int j = 0; j < longitud; j++)
+    {
+        for(int k = 0;k < longitud-j-1; k++)
+        {
+            if(arreglo[k] > arreglo[k+1])
+            {
+                //intercambiar(&arreglo[k],&arreglo[k+1]);
+            }
+        }
+    }
 }
